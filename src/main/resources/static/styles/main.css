@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Yellowtail&display=swap');
+
+.font-yellow {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-instrumentSerif {
+    font-family: "Instrument Serif", serif;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Instrument Serif", serif;
+    font-style: normal;
+}

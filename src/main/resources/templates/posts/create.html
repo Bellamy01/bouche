@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
     <title>New Post | Bouche</title>
     <script>
         module.exports = {
@@ -22,8 +23,7 @@
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1">
                     <a href="/" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Bouche</span>
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                        <span class="font-yellow text-3xl leading-6 tracking-wide">Bouche</span>
                     </a>
                 </div>
                 <div class="flex lg:hidden">
@@ -50,7 +50,7 @@
                 <div class="fixed inset-0 z-50"></div>
                 <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div class="flex items-center justify-between">
-                        <a href="/" class="-m-1.5 p-1.5">
+                        <a href="#" class="-m-1.5 p-1.5">
                             <span class="sr-only">Bouche</span>
                             <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
                         </a>
@@ -64,13 +64,13 @@
                     <div class="mt-6 flow-root">
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="space-y-2 py-6">
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-6 text-gray-900 hover:bg-gray-50">Product</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">Features</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">Company</a>
                             </div>
                             <div class="py-6">
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                                <a href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 font-instrumentSerif  text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">Log in</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
             <form action="#" th:action="@{/posts/save}" th:object="${post}" method="post">
                     <div class="space-y-12 sm:space-y-16">
                         <div>
-                            <h2 class="text-base font-semibold leading-7 text-gray-900">Post</h2>
+                            <h2 class="text-xl tracking-wide font-semibold leading-7 text-gray-900">Post</h2>
                             <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-600">
                                 This page is your kitchen for creating delicious blog posts! Enjoy the cooking!
                             </p>
